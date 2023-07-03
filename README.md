@@ -1,26 +1,3 @@
----
-title: "Test"
-author: "This vignette was created by Eléonore Schneegans and Nurun Fancy"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-output:
-  html_document:
-    self_contained: yes
-    theme: "flatly"
-    toc: true
-    toc_float: true
-    fig_caption: true
-    toc_depth: 3
-    code_folding: show
-    df_print: paged
-vignette: >
-  %\VignetteIndexEntry{Omix - Get started}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
-editor_options: 
-  markdown: 
-  wrap: 72
----
-
 ```{r style, echo=FALSE, results='asis', message=FALSE, warning=FALSE}
 BiocStyle::markdown()
 knitr::opts_chunk$set(tidy = FALSE,
