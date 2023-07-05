@@ -38,3 +38,6 @@ jobs:
             nfancy/synapsetest:latest
           secrets: | 
             "GH_TOKEN=${{ secrets.GH_TOKEN }}"
+            "SYNAPSE_ID=${{ secrets.SYNAPSE_ID }}"
+            "SYNAPSE_PASSWORD=${{ secrets.SYNAPSE_PASSWORD }}"
+            "SYNAPSE_TOKEN=${{ secrets.SYNAPSE_TOKEN }}"
