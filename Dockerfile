@@ -1,5 +1,16 @@
 FROM rocker/rstudio:4.0.2
 
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends apt-utils \
+	&& apt-get install -y --no-install-recommends \
+	python3 \
+	python3-setuptools \
+	python3-dev \
+	python3-pip \
+	python3-venv
+
+RUN R -e "install.packages('synapser', repos=c('http://ran.synapse.org', 'http://cran.fhcrc.org'))"
+
 COPY ./vignette/download_file.R .
 
 RUN --mount=type=secret,id=GH_TOKEN \
